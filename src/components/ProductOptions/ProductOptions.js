@@ -8,8 +8,8 @@ const ProductOptions = props => {
 
   return (
     <form>
-      <OptionSize sizes = {props.product.sizes} setCurrentSize = {props.setCurrentSize}  currentSize = {props.currentSize} />
-      <OptionColor colors = {props.product.colors} setCurrentColor = {props.setCurrentColor} currentColor = {props.currentColor}/>
+      <OptionSize sizes = {props.sizes} setCurrentSize = {props.setCurrentSize}  currentSize = {props.currentSize} />
+      <OptionColor colors = {props.colors} setCurrentColor = {props.setCurrentColor} currentColor = {props.currentColor}/>
       <Button className={styles.button} onClick={props.prepareSummary}>
         <span className="fa fa-shopping-cart" />
       </Button>

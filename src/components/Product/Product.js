@@ -35,7 +35,8 @@ const Product = props => {
           <span className={styles.price}>Price: {getPrice}$</span>
         </header>
         <ProductOptions 
-          product = {props}
+          sizes = {props.sizes}
+          colors = {props.colors}
           setCurrentSize = {setCurrentSize} 
           currentSize = {currentSize} 
           setCurrentColor = {setCurrentColor}
